@@ -1,26 +1,45 @@
-# 🍽️ Filipino Fusion Restaurant Menu
+# 🍽️ Filipino Fusion Restaurant Ordering & Booking Kiosk
 
 [![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://lamesamenu.vercel.app/)
 ![Status](https://img.shields.io/badge/Status-Open-brightgreen)
 ![Cuisine](https://img.shields.io/badge/Cuisine-Filipino%20Fusion-orange)
-![Dining](https://img.shields.io/badge/Dining-Dine--In%20%26%20Takeout-blue)
-![Quality](https://img.shields.io/badge/Quality-Premium-gold)
+![Ordering](https://img.shields.io/badge/Ordering-Online%20Ordering-blue)
+![Booking](https://img.shields.io/badge/Booking-Reservations-purple)
+![Dining](https://img.shields.io/badge/Dining-Dine--In%20%26%20Takeout-pink)
 
-> A curated selection of Filipino classics and international favorites, crafted with premium ingredients and traditional flavors.
+> A modern restaurant ordering and reservation platform combining Filipino fusion cuisine with a clean, professional, and Japanese-inspired self-service kiosk experience.
 
 ---
 
-## ✨ Menu Highlights
+## ✨ What This Project Offers
+
+This project is designed as a complete digital restaurant experience where customers can:
+
+* Browse the restaurant menu
+* Explore Filipino fusion dishes
+* Add food to their cart
+* Place online orders
+* Choose their preferred payment method
+* Select how they want to receive their order
+* Reserve a table or dining slot
+
+The interface is designed to feel like a professional restaurant ordering kiosk while also functioning as a modern online restaurant website.
+
+---
+
+## 🍽️ Online Food Ordering
+
+Customers can browse the menu and order food through an easy-to-use ordering interface.
 
 ### 🥗 Panimula (Starters)
 
 #### 🥔 Potato Salad — ₱100
 
-Potatoes, mayonnaise, carrots, onions, eggs, salt, pepper
+Potatoes, mayonnaise, carrots, onions, eggs
 
 #### 🦀 Kani Salad — ₱180
 
-Crab sticks (kani), cucumber, carrots, Japanese mayonnaise, sesame seeds
+Crab sticks, cucumber, carrots, sesame
 
 ---
 
@@ -30,31 +49,31 @@ Crab sticks (kani), cucumber, carrots, Japanese mayonnaise, sesame seeds
 
 #### 🐖 Cochinillo — ₱450
 
-Slow-roasted pork, garlic, lemongrass, onions, and traditional Filipino spices, served with rice.
+Slow-roasted pork, garlic, and lemongrass
 
 #### 🍗 Roasted Chicken — ₱500
 
-Half chicken, wild rice, roasted vegetables, pan gravy.
+Half chicken, wild rice, and vegetables
 
 ---
 
-## 🇵🇭 Filipino Main Classics
+### 🇵🇭 Filipino Main Classics
 
 #### 🍛 Adobo — ₱650
 
-Chicken, soy sauce, vinegar, garlic, bay leaves, black pepper
+Chicken, soy sauce, vinegar, and garlic
 
 #### 🥜 Kare-Kare — ₱500
 
-Beef, peanut sauce, eggplant, string beans, bok choy
+Beef, peanut sauce, eggplant, and beans
 
 #### 🍅 Menudo — ₱500
 
-Pork, liver, tomato sauce, potatoes, carrots, raisins
+Pork, liver, tomato, potatoes, and raisins
 
 #### 🐷 Lechon Kawali — ₱500
 
-Crispy pork belly, garlic, salt, pepper
+Crispy pork belly, garlic, and salt
 
 ---
 
@@ -62,35 +81,180 @@ Crispy pork belly, garlic, salt, pepper
 
 #### 🍧 Halo-Halo — ₱120
 
-Crushed ice, evaporated milk, sweetened beans, nata de coco, kaong, jackfruit, saba bananas, ube, leche flan
+Crushed ice, milk, beans, fruits, and leche flan
 
 #### 🍮 Leche Flan — ₱100
 
-Egg yolks, condensed milk, evaporated milk, caramelized sugar
+Egg yolks, condensed milk, and caramel
 
-#### ⭐ Mango Float — ₱280
+#### 🥭 Mango Float — ₱280
 
-Ripe mangoes, graham crackers, all-purpose cream, condensed milk
+Mangoes, graham crackers, cream, and condensed milk
 
 #### ☕ Tiramisu — ₱290
 
-Espresso-soaked ladyfingers, mascarpone cream
+Espresso-soaked ladyfingers and mascarpone
 
 ---
 
 ## 🍷 Inumin (Drinks)
 
-#### 🍷 House Wine (Glass) — ₱150
+#### 🍷 House Wine — ₱150
 
 Red or White selection
 
 #### 🥥 Tuba — ₱200
 
-Traditional Filipino coconut wine made from fermented coconut palm sap
+Coconut wine made from fermented coconut sap
 
 #### 🧊 Bottomless Iced Tea — ₱150
 
-Freshly brewed iced tea with unlimited refills
+Iced tea with unlimited refills
+
+---
+
+## 🛒 Checkout & Ordering Options
+
+During checkout, customers can select their preferred order type:
+
+### 🚚 Delivery
+
+Customers can provide their delivery information and address.
+
+### 🛍️ Pickup
+
+Customers can place an order for pickup.
+
+### 🍽️ Dine-In
+
+Customers can order food to eat inside the restaurant.
+
+### ⚡ ASAP
+
+Customers can request their order to be prepared as soon as possible.
+
+---
+
+## 💳 Payment Methods
+
+The checkout system supports multiple payment method options:
+
+* 💙 GCash
+* 💵 Cash
+* 💳 Card
+
+The selected payment method is included in the order details and confirmation.
+
+---
+
+## 📅 Table Booking & Reservations
+
+Customers can also reserve a table or dining slot directly through the website.
+
+### Booking Details
+
+Customers can provide:
+
+* 👤 Name
+* 📱 Contact information
+* 📅 Date
+* 🕐 Time
+* 👨‍👩‍👧‍👦 Number of guests
+* 📝 Special requests
+
+Each reservation receives a unique booking reference number.
+
+---
+
+## 🔢 Order & Booking References
+
+Every order and reservation receives its own unique reference number.
+
+### Example Order References
+
+```text
+ORD-0001
+ORD-0002
+ORD-0003
+```
+
+### Example Booking References
+
+```text
+BOOK-0001
+BOOK-0002
+BOOK-0003
+```
+
+Reference numbers are designed to continuously increment instead of using the same number for every customer.
+
+---
+
+## 📧 Notifications
+
+The system is designed to provide notifications for:
+
+* 🛒 New food orders
+* 📅 New reservations
+* 💳 Selected payment methods
+* 🚚 Delivery, pickup, or dine-in orders
+* 📋 Order details
+* 🔢 Order and booking reference numbers
+
+---
+
+## 🎨 Design Philosophy
+
+The website uses a clean and professional design inspired by modern Japanese restaurant ordering kiosks.
+
+### Design Features
+
+* 🌸 Pink-based color palette
+* 🍱 Japanese-inspired restaurant aesthetic
+* 🖥️ Clean and modern interface
+* 📱 Responsive layout
+* 👆 Touch-friendly controls
+* 🛒 Simple ordering flow
+* 📅 Easy reservation experience
+* ✨ Subtle and professional animations
+
+The goal is to create a restaurant platform that feels both **modern and approachable**, without relying on excessive visual effects or unnecessary design elements.
+
+---
+
+## 🛠️ Built With
+
+* HTML5
+* CSS3
+* JavaScript
+* Font Awesome
+* Responsive Web Design
+
+---
+
+## 📁 Project Structure
+
+```text
+restaurant-kiosk/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+└── media/
+    ├── potato-salad.jpg
+    ├── kani.jpg
+    ├── cochinillo.jpg
+    ├── roasted-chicken.jpg
+    ├── adobo.jpg
+    ├── kare-kare.jpg
+    ├── menudo.jpg
+    ├── lechon-kawali.jpg
+    ├── halo-halo.jpg
+    ├── leche-flan.jpg
+    ├── mango-float.jpg
+    └── tiramisu.jpg
+```
 
 ---
 
@@ -98,34 +262,54 @@ Freshly brewed iced tea with unlimited refills
 
 ### Best Seller Combo
 
-* Potato Salad
-* Cochinillo
-* Mango Float
-* Bottomless Iced Tea
+* 🥔 Potato Salad
+* 🐖 Cochinillo
+* 🥭 Mango Float
+* 🧊 Bottomless Iced Tea
 
 **Total:** ₱980
 
 ### Filipino Feast
 
-* Kani Salad
-* Kare-Kare
-* Halo-Halo
-* Tuba
+* 🦀 Kani Salad
+* 🥜 Kare-Kare
+* 🍧 Halo-Halo
+* 🥥 Tuba
 
 **Total:** ₱1,000
 
 ---
 
-## 📍 Dining Information
+## 📍 Restaurant Experience
 
 * 🍽️ Dine-In Available
-* 🥡 Takeout Available
+* 🥡 Pickup Available
+* 🚚 Delivery Available
+* 📅 Online Reservations
+* 💳 Multiple Payment Options
 * 👨‍👩‍👧‍👦 Family Friendly
-* 🇵🇭 Authentic Filipino Flavors
+* 🇵🇭 Filipino-Inspired Cuisine
 * ⭐ Signature House Specialties
+
+---
+
+## 🚀 Future Improvements
+
+* Backend and database integration
+* Real-time order tracking
+* Admin dashboard
+* Reservation management system
+* Real email notification system
+* Real GCash payment integration
+* Real card payment integration
+* Customer accounts
+* Order history
+* Kitchen order management
 
 ---
 
 ## ❤️ Thank You For Dining With Us
 
-*"Bringing together the rich flavors of Filipino cuisine and modern culinary experiences."*
+> *Bringing together the rich flavors of Filipino cuisine with a modern digital restaurant experience.*
+
+Made with ❤️ for a better way to order, dine, and reserve.
