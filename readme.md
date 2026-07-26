@@ -1,6 +1,6 @@
 🏠 Restaurant Management System
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://your-restaurant-url.com)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-brightgreen)](https://lamesamenu.vercel.app/))
 [![GitHub last commit](https://img.shields.io/github/last-commit/yourusername/RestaurantSystem)](https://github.com/yourusername/RestaurantSystem/commits/main)
 [![Status](https://img.shields.io/badge/Status-Complete-brightgreen)]()
 [![License](https://img.shields.io/badge/License-MIT-blue)]()
