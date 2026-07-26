@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes"
+    />
+    <title>Badger's Restaurant Website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="theme-overlay open" id="themeOverlay">
+      <div class="theme-modal">
+        <h2>Welcome to Badger's Restaurant Website</h2>
+        <p>Choose your dining atmosphere to begin</p>
+
+        <div class="theme-options">
+          <div class="theme-option rustic-theme active" data-theme="rustic">
+            <div class="color-swatch">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="theme-label">Modern Rustic</span>
+            <span class="theme-sub">Authentic · Homey</span>
+          </div>
+          <div class="theme-option pink-theme" data-theme="pink">
+            <div class="color-swatch">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <span class="theme-label">Sakura Pink</span>
+            <span class="theme-sub">Vibrant · Playful</span>
+          </div>
+        </div>
+
+        <button class="btn-primary" id="confirmThemeBtn">
+          Enter Badger's Restaurant Website
+        </button>
+      </div>
+    </div>
+
+    <div class="kiosk-container">
+      <header class="kiosk-header">
+        <div class="brand">
+          <h1>
+            Badger Website Sample 01
+            <small>Kiosk Restaurant Website</small>
+          </h1>
+        </div>
+        <div class="kiosk-status">
+          <span class="pulse-dot"></span>
+          Open
+          <span class="open-hours">· 10am – 9pm</span>
+        </div>
+      </header>
+
+      <div class="nav-tabs">
+        <button class="active" data-tab="menu">Menu</button>
+        <button data-tab="booking">
+          Book a Table <span class="tab-badge">NEW</span>
+        </button>
+        <button data-tab="reservations">My Reservations</button>
+      </div>
+
+      <div class="tab-content active" id="tab-menu">
+        <div class="kiosk-grid">
+          <aside class="category-sidebar">
+            <div class="sidebar-header">
+              <h3>Menu</h3>
+            </div>
+            <button class="cat-btn active" data-category="all">All</button>
+            <button class="cat-btn" data-category="panimula">Starters</button>
+            <button class="cat-btn" data-category="pangunahin">Mains</button>
+            <button class="cat-btn" data-category="clscs">Classics</button>
+            <button class="cat-btn" data-category="panghimagas">
+              Desserts
+            </button>
+            <button class="cat-btn" data-category="inumin">Drinks</button>
+          </aside>
+
+          <section class="product-area">
+            <div class="product-area-header">
+              <h2 id="categoryTitle">All Menu</h2>
+              <span id="itemCount">0 items</span>
+            </div>
+            <div class="product-grid" id="productGrid"></div>
+          </section>
+
+          <aside class="cart-panel">
+            <div class="cart-header">
+              <h3>Cart</h3>
+              <span class="cart-count" id="cartCount">0</span>
+            </div>
+            <div class="cart-items" id="cartItems">
+              <div class="empty-state">Your cart is empty</div>
+            </div>
+            <div class="cart-total">
+              <span>Total</span>
+              <span id="cartTotal">₱0</span>
+            </div>
+            <div class="checkout-actions">
+              <button class="btn-primary" id="checkoutBtn">Checkout</button>
+              <button class="btn-secondary" id="clearCartBtn">
+                Clear Cart
+              </button>
+            </div>
+          </aside>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-booking">
+        <div class="booking-container">
+          <h2>Reserve a Table</h2>
+          <p class="subtitle">
+            Book your dining experience at Badger's Restaurant Website
+          </p>
+
+          <div id="bookingFormContainer">
+            <form class="booking-form" id="bookingForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Date <span class="required">*</span></label>
+                  <input type="date" id="bookingDate" required />
+                </div>
+                <div class="form-group">
+                  <label>Time <span class="required">*</span></label>
+                  <select id="bookingTime" required>
+                    <option value="">Select time</option>
+                    <option value="11:00">11:00 AM</option>
+                    <option value="11:30">11:30 AM</option>
+                    <option value="12:00">12:00 PM</option>
+                    <option value="12:30">12:30 PM</option>
+                    <option value="13:00">1:00 PM</option>
+                    <option value="13:30">1:30 PM</option>
+                    <option value="14:00">2:00 PM</option>
+                    <option value="17:00">5:00 PM</option>
+                    <option value="17:30">5:30 PM</option>
+                    <option value="18:00">6:00 PM</option>
+                    <option value="18:30">6:30 PM</option>
+                    <option value="19:00">7:00 PM</option>
+                    <option value="19:30">7:30 PM</option>
+                    <option value="20:00">8:00 PM</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Guests <span class="required">*</span></label>
+                  <select id="bookingGuests" required>
+                    <option value="1">1 person</option>
+                    <option value="2" selected>2 people</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11+ (call us)</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label>Your Name <span class="required">*</span></label>
+                  <input
+                    type="text"
+                    id="bookingName"
+                    placeholder="Full name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Contact Number <span class="required">*</span></label>
+                  <input
+                    type="tel"
+                    id="bookingPhone"
+                    placeholder="+63 915 123 4567"
+                    required
+                  />
+                </div>
+                <div class="form-group">
+                  <label>Email (optional)</label>
+                  <input
+                    type="email"
+                    id="bookingEmail"
+                    placeholder="your@email.com"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Special Requests</label>
+                <textarea
+                  id="bookingRequests"
+                  placeholder="Dietary restrictions, celebrations, seating preferences..."
+                ></textarea>
+              </div>
+
+              <div class="booking-summary">
+                <p>
+                  <span class="label">Date:</span>
+                  <span id="summaryDate">Date not selected</span>
+                </p>
+                <p>
+                  <span class="label">Time:</span>
+                  <span id="summaryTime">Time not selected</span>
+                </p>
+                <p>
+                  <span class="label">Guests:</span>
+                  <span id="summaryGuests">0 guests</span>
+                </p>
+              </div>
+
+              <button
+                type="submit"
+                class="btn-primary"
+                style="width: 100%; margin-top: 6px"
+              >
+                Confirm Reservation
+              </button>
+            </form>
+          </div>
+
+          <div id="bookingConfirmation" style="display: none"></div>
+        </div>
+      </div>
+
+      <div class="tab-content" id="tab-reservations">
+        <div class="booking-container">
+          <h2>Your Reservations</h2>
+          <p class="subtitle">View and manage your upcoming bookings</p>
+          <div id="reservationList">
+            <div class="empty-state">No reservations yet.</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="checkout-overlay" id="checkoutOverlay">
+        <div class="checkout-modal">
+          <div id="checkoutContent"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
