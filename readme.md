@@ -6,7 +6,7 @@
 [![License](https://img.shields.io/badge/License-MIT-blue)]()
 
 > A comprehensive full-stack restaurant management system featuring POS, inventory, reservations, kitchen display, CRM, and delivery integrations.
-
+Updated
 ![Restaurant System Preview](images/preview.png)
 
 ---
